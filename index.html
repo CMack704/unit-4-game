@@ -7,40 +7,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <header id="header">
+<body class="container">
+    <header class="row" id="header">
         <h1>Crystals Collector!</h1>
     </header>
-    <div id="rules">
-        <p>You will be given a random number at the start of the game.</p>
-        <p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</p>
-        <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-        <p>The value of each crystal is hidden from you until you click on it.</p>
-        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+    <div class="row" id="rules">
+        <p class="instructions">You will be given a random number at the start of the game.</p>
+        <p class="instructions">There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <p class="instructions">You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+        <p class="instructions">The value of each crystal is hidden from you until you click on it.</p>
+        <p class="instructions">Each time when the game starts, the game will change the values of each crystal.</p>
     </div>
-    <div id="pc-num">
-        <p id="random-number"></p>
+    <div class="row">
+        <div id="pc-num">
+            <p id="random-number"></p>
+        </div>
+        <div id="wins-losses">
+            <p>Wins:<span id="wins"> 0</span></p>
+            <p>Losses:<span id="losses"> 0</span></p>
+        </div>
     </div>
-    <div id="wins-losses">
-        <p>Wins:<span id="wins"> 0</span></p>
-        <p>Loses:<span id="losses"> 0</span></p>
-    </div>
-    <div>
+    <div class="row">
         <img id="blue" src="./assets/images/blue-crystal.png">
         <img id="clear" src="./assets/images/clear-crystal.jpg">
         <img id="green" src="./assets/images/green-crystal.jpg">
         <img id="purple" src="./assets/images/purple-crystal.jpg">
     </div>
-    <div>
+    <div class="row" id="total-score">
         <p id="total">Your total score is:</p>
     </div>
-    <div id="score">
-        <p>0</p>
+    <div class="row">
+        <p id="score">0</p>
     </div>
 
 </body>
