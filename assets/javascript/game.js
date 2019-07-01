@@ -26,12 +26,12 @@ $(document).ready(function(){
         score = score + numTwo;
         score = score + numThree;
         score = score + numFour;
+        console.log(score);
     
 
         if  (score === randomNumber) {
             alert ("You win!");
             wins++;
-            randomNumber = Math.floor(Math.random() * 39) + 1;
             numOne = Math.floor(Math.random() * 9) + 1;
             numTwo = Math.floor(Math.random() * 9) + 1;
             numThree = Math.floor(Math.random() * 9) + 1;
@@ -40,8 +40,7 @@ $(document).ready(function(){
         
         } else if (score >= randomNumber) {
             alert ("Sorry, you lost!");
-            losses++;
-            randomNumber = Math.floor(Math.random() * 39) + 1;
+            losses++;   
             numOne = Math.floor(Math.random() * 9) + 1;
             numTwo = Math.floor(Math.random() * 9) + 1;
             numThree = Math.floor(Math.random() * 9) + 1;
