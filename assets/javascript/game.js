@@ -5,51 +5,86 @@ var wins = 0;
 var losses = 0;
 var score = 0;
 
-$("#wins").text(wins);
-$("#losses").text(losses);
-$("#score").text(score);
-
 
 
 $(document).ready(function(){
     var randomNumber = Math.floor(Math.random() * 39) + 1;
-    var numOne = Math.floor(Math.random() * 9) + 1;
-    var numTwo = Math.floor(Math.random() * 9) + 1;
-    var numThree = Math.floor(Math.random() * 9) + 1;
-    var numFour = Math.floor(Math.random() * 9) + 1;
-
-    $("#pc-num").text(randomNumber);
+    var blue = Math.floor(Math.random() * 9) + 1;
+    var clear = Math.floor(Math.random() * 9) + 1;
+    var green = Math.floor(Math.random() * 9) + 1;
+    var purple = Math.floor(Math.random() * 9) + 1;
+    $("#pc-num").text(randomNumber);   
     console.log(randomNumber);
 
-    $("img").on("click", function() {
-        score = score + numOne;
-        score = score + numTwo;
-        score = score + numThree;
-        score = score + numFour;
-        console.log(score);
-    
 
+    $("#blue").on("click", function(){
+        score = score + blue;
+        $("#score").text(score);
+        console.log(score);
         if  (score === randomNumber) {
             alert ("You win!");
             wins++;
-            numOne = Math.floor(Math.random() * 9) + 1;
-            numTwo = Math.floor(Math.random() * 9) + 1;
-            numThree = Math.floor(Math.random() * 9) + 1;
-            numFour = Math.floor(Math.random() * 9) + 1;
-            
-        
+            $("#wins").text(wins);      
         } else if (score >= randomNumber) {
             alert ("Sorry, you lost!");
-            losses++;   
-            numOne = Math.floor(Math.random() * 9) + 1;
-            numTwo = Math.floor(Math.random() * 9) + 1;
-            numThree = Math.floor(Math.random() * 9) + 1;
-            numFour = Math.floor(Math.random() * 9) + 1;
-        
+            losses++;
+            $("#losses").text(losses);   
         } else {
-
+    
         }
-    });
+    })
+    $("#clear").on("click", function(){
+        score = score + clear;
+        $("#score").text(score);
+        console.log(score);
+        if  (score === randomNumber) {
+            alert ("You win!");
+            wins++;
+            $("#wins").text(wins);        
+        } else if (score >= randomNumber) {
+            alert ("Sorry, you lost!");
+            losses++;
+            $("#losses").text(losses);    
+        } else {
+    
+        }
+    })
+    $("#green").on("click", function(){
+        score = score + green;
+        $("#score").text(score);
+        console.log(score);
+        if  (score === randomNumber) {
+            alert ("You win!");
+            wins++;
+            $("#wins").text(wins);      
+        } else if (score >= randomNumber) {
+            alert ("Sorry, you lost!");
+            losses++;
+            $("#losses").text(losses);    
+        } else {
+    
+        }
+    })
+    $("#purple").on("click", function(){
+        score = score + purple;
+        $("#score").text(score);
+        console.log(score);
+        if  (score === randomNumber) {
+            alert ("You win!");
+            wins++;
+            $("#wins").text(wins);     
+        } else if (score >= randomNumber) {
+            alert ("Sorry, you lost!");
+            losses++;
+            $("#losses").text(losses);     
+        } else {
+    
+        }
+    })
+
+
+
+
 
 
 });
