@@ -7,19 +7,19 @@ var score = 0;
 
 
 $(document).ready(function(){
-    var randomNumber = Math.floor(Math.random() * 39) + 1;
-    var blue = Math.floor(Math.random() * 9) + 1;
-    var clear = Math.floor(Math.random() * 9) + 1;
-    var green = Math.floor(Math.random() * 9) + 1;
-    var purple = Math.floor(Math.random() * 9) + 1;
+    var randomNumber = Math.floor(Math.random() * 102) + 19;
+    var blue = Math.floor(Math.random() * 12) + 1;
+    var clear = Math.floor(Math.random() * 12) + 1;
+    var green = Math.floor(Math.random() * 12) + 1;
+    var purple = Math.floor(Math.random() * 12) + 1;
     $("#pc-num").text(randomNumber);   
     console.log(randomNumber);
 
 
-    blue = Math.floor(Math.random() * 9) + 1;
-    clear = Math.floor(Math.random() * 9) + 1;
-    green = Math.floor(Math.random() * 9) + 1;
-    purple = Math.floor(Math.random() * 9) + 1;
+    blue = Math.floor(Math.random() * 12) + 1;
+    clear = Math.floor(Math.random() * 12) + 1;
+    green = Math.floor(Math.random() * 12) + 1;
+    purple = Math.floor(Math.random() * 12) + 1;
 
     $("#blue").on("click", function(){
         score = score + blue;
@@ -30,22 +30,22 @@ $(document).ready(function(){
             wins++;
             $("#wins").text(wins);
             $("#score").text(score = 0);
-            randomNumber = Math.floor(Math.random() * 39) + 1;
-            blue = Math.floor(Math.random() * 9) + 1;
-            clear = Math.floor(Math.random() * 9) + 1;
-            green = Math.floor(Math.random() * 9) + 1;
-            purple = Math.floor(Math.random() * 9) + 1;
+            randomNumber = Math.floor(Math.random() * 102) + 19;
+            blue = Math.floor(Math.random() * 12) + 1;
+            clear = Math.floor(Math.random() * 12) + 1;
+            green = Math.floor(Math.random() * 12) + 1;
+            purple = Math.floor(Math.random() * 12) + 1;
             $("#pc-num").text(randomNumber);
         } else if (score >= randomNumber) {
             alert ("Sorry, you lost!");
             losses++;
             $("#losses").text(losses);
             $("#score").text(score = 0);
-            randomNumber = Math.floor(Math.random() * 39) + 1;
-            blue = Math.floor(Math.random() * 9) + 1;
-            clear = Math.floor(Math.random() * 9) + 1;
-            green = Math.floor(Math.random() * 9) + 1;
-            purple = Math.floor(Math.random() * 9) + 1;
+            randomNumber = Math.floor(Math.random() * 102) + 19;
+            blue = Math.floor(Math.random() * 12) + 1;
+            clear = Math.floor(Math.random() * 12) + 1;
+            green = Math.floor(Math.random() * 12) + 1;
+            purple = Math.floor(Math.random() * 12) + 1;
             $("#pc-num").text(randomNumber);
         } else {
     
@@ -60,22 +60,22 @@ $(document).ready(function(){
             wins++;
             $("#wins").text(wins);
             $("#score").text(score = 0);
-            randomNumber = Math.floor(Math.random() * 39) + 1;
-            blue = Math.floor(Math.random() * 9) + 1;
-            clear = Math.floor(Math.random() * 9) + 1;
-            green = Math.floor(Math.random() * 9) + 1;
-            purple = Math.floor(Math.random() * 9) + 1;
+            randomNumber = Math.floor(Math.random() * 102) + 19;
+            blue = Math.floor(Math.random() * 12) + 1;
+            clear = Math.floor(Math.random() * 12) + 1;
+            green = Math.floor(Math.random() * 12) + 1;
+            purple = Math.floor(Math.random() * 12) + 1;
             $("#pc-num").text(randomNumber);    
         } else if (score >= randomNumber) {
             alert ("Sorry, you lost!");
             losses++;
             $("#losses").text(losses);
             $("#score").text(score = 0);
-            randomNumber = Math.floor(Math.random() * 39) + 1;
-            blue = Math.floor(Math.random() * 9) + 1;
-            clear = Math.floor(Math.random() * 9) + 1;
-            green = Math.floor(Math.random() * 9) + 1;
-            purple = Math.floor(Math.random() * 9) + 1;
+            randomNumber = Math.floor(Math.random() * 102) + 19;
+            blue = Math.floor(Math.random() * 12) + 1;
+            clear = Math.floor(Math.random() * 12) + 1;
+            green = Math.floor(Math.random() * 12) + 1;
+            purple = Math.floor(Math.random() * 12) + 1;
             $("#pc-num").text(randomNumber);
         } else {
     
@@ -90,22 +90,22 @@ $(document).ready(function(){
             wins++;
             $("#wins").text(wins);
             $("#score").text(score = 0);
-            randomNumber = Math.floor(Math.random() * 39) + 1;
-            blue = Math.floor(Math.random() * 9) + 1;
-            clear = Math.floor(Math.random() * 9) + 1;
-            green = Math.floor(Math.random() * 9) + 1;
-            purple = Math.floor(Math.random() * 9) + 1;
+            randomNumber = Math.floor(Math.random() * 102) + 19;
+            blue = Math.floor(Math.random() * 12) + 1;
+            clear = Math.floor(Math.random() * 12) + 1;
+            green = Math.floor(Math.random() * 12) + 1;
+            purple = Math.floor(Math.random() * 12) + 1;
             $("#pc-num").text(randomNumber);  
         } else if (score >= randomNumber) {
             alert ("Sorry, you lost!");
             losses++;
             $("#losses").text(losses);
             $("#score").text(score = 0);
-            randomNumber = Math.floor(Math.random() * 39) + 1;
-            blue = Math.floor(Math.random() * 9) + 1;
-            clear = Math.floor(Math.random() * 9) + 1;
-            green = Math.floor(Math.random() * 9) + 1;
-            purple = Math.floor(Math.random() * 9) + 1;
+            randomNumber = Math.floor(Math.random() * 102) + 19;
+            blue = Math.floor(Math.random() * 12) + 1;
+            clear = Math.floor(Math.random() * 12) + 1;
+            green = Math.floor(Math.random() * 12) + 1;
+            purple = Math.floor(Math.random() * 12) + 1;
             $("#pc-num").text(randomNumber);  
         } else {
     
@@ -120,22 +120,22 @@ $(document).ready(function(){
             wins++;
             $("#wins").text(wins);
             $("#score").text(score = 0);
-            randomNumber = Math.floor(Math.random() * 39) + 1;
-            blue = Math.floor(Math.random() * 9) + 1;
-            clear = Math.floor(Math.random() * 9) + 1;
-            green = Math.floor(Math.random() * 9) + 1;
-            purple = Math.floor(Math.random() * 9) + 1;
+            randomNumber = Math.floor(Math.random() * 102) + 19;
+            blue = Math.floor(Math.random() * 12) + 1;
+            clear = Math.floor(Math.random() * 12) + 1;
+            green = Math.floor(Math.random() * 12) + 1;
+            purple = Math.floor(Math.random() * 12) + 1;
             $("#pc-num").text(randomNumber);  
         } else if (score >= randomNumber) {
             alert ("Sorry, you lost!");
             losses++;
             $("#losses").text(losses);
             $("#score").text(score = 0);
-            randomNumber = Math.floor(Math.random() * 39) + 1;
-            blue = Math.floor(Math.random() * 9) + 1;
-            clear = Math.floor(Math.random() * 9) + 1;
-            green = Math.floor(Math.random() * 9) + 1;
-            purple = Math.floor(Math.random() * 9) + 1;
+            randomNumber = Math.floor(Math.random() * 102) + 19;
+            blue = Math.floor(Math.random() * 12) + 1;
+            clear = Math.floor(Math.random() * 12) + 1;
+            green = Math.floor(Math.random() * 12) + 1;
+            purple = Math.floor(Math.random() * 12) + 1;
             $("#pc-num").text(randomNumber);
         } else {
     
